@@ -15,13 +15,37 @@
 
     body {
       margin: 0;
+      padding-top: 80px; /* plads til menu */
       font-family: "Segoe UI", Arial, sans-serif;
       background: var(--light);
       color: #111;
       line-height: 1.8;
     }
 
-    /* HEADER MED DIT BILLEDE */
+    /* MENU */
+    .menu {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      background: rgba(15,23,42,0.95);
+      padding: 15px 20px;
+      display: flex;
+      justify-content: center;
+      gap: 25px;
+      z-index: 1000;
+    }
+
+    .menu a {
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .menu a:hover {
+      text-decoration: underline;
+    }
+
+    /* HEADER */
     header {
       background:
         linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
@@ -99,7 +123,16 @@
 
 <body>
 
-<header>
+<!-- MENU -->
+<nav class="menu">
+  <a href="#hjem">Hjem</a>
+  <a href="#rojava">Rojava nu</a>
+  <a href="hvem-er-kurder.html">Hvem er kurder?</a>
+  <a href="#stot">Støt sagen</a>
+  <a href="#kontakt">Kontakt</a>
+</nav>
+
+<header id="hjem">
   <h1>Vi demonstrerer for Rojava og kurdernes frihed</h1>
   <p>Fordi stilhed også er et valg – og vi nægter at være stille</p>
 </header>
@@ -116,7 +149,7 @@
   </p>
 </section>
 
-<section class="alert">
+<section class="alert" id="rojava">
   <h2>Hvad sker der lige nu i Rojava?</h2>
   <p><strong>Børn og familier mangler mad, vand og elektricitet.</strong></p>
   <p>
@@ -140,13 +173,13 @@
   </p>
 </section>
 
-<section class="donate">
+<section class="donate" id="stot">
   <h2>Vil du støtte sagen?</h2>
   <p><strong>MobilePay: 5325ED</strong></p>
   <p>Din støtte hjælper civile, børn og familier 💛</p>
 </section>
 
-<footer>
+<footer id="kontakt">
   <p>Hjemmesiden er lavet af Hamudi</p>
   <p>
     Instagram:
@@ -158,4 +191,3 @@
 
 </body>
 </html>
-
