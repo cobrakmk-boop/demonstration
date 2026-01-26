@@ -82,41 +82,45 @@
       border: none;
     }
 
-    .timeline {
-      position: relative;
-      padding-left: 30px;
-    }
-
-    .timeline::before {
-      content: "";
-      position: absolute;
-      left: 8px;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: var(--accent);
-    }
-
-    .timeline-item {
-      margin-bottom: 30px;
-    }
-
-    .timeline-item h3 {
-      margin-bottom: 5px;
-      color: var(--accent);
-    }
-
-    .gallery {
+    /* 🔥 NYT PROFESSIONELT BILLED-DESIGN */
+    .story-gallery {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-      gap: 20px;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 25px;
     }
 
-    .gallery-item img {
+    .story-item {
+      position: relative;
+      height: 260px;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+    }
+
+    .story-item img {
       width: 100%;
-      height: 220px;
+      height: 100%;
       object-fit: cover;
-      border-radius: 8px;
+    }
+
+    .story-overlay {
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        rgba(0,0,0,0.85),
+        rgba(0,0,0,0.25)
+      );
+      display: flex;
+      align-items: flex-end;
+      padding: 20px;
+    }
+
+    .story-overlay p {
+      color: white;
+      font-size: 1rem;
+      font-weight: bold;
+      margin: 0;
     }
 
     footer {
@@ -184,30 +188,40 @@
 
 <section>
   <h2>Fakta vs. Myter</h2>
-  <p><strong>❌ Myte:</strong>Den nye syriske stat (tidligere ISIS) siger: “Vi kæmper mod PKK, ikke mod kurdere.” </p>
-  <p><strong>✅ Fakta:</strong> De dræber civile kurdere, bomber alle kirker, voldtager kvinder, dræber børn, kaster civile mennesker ud fra høje bygninger og kidnapper civile samt kræver penge for at løslade dem.   </p>
-
-  <p><strong>❌ Myte:</strong> Rojava er kun for kurder </p>
-  <p><strong>✅ Fakta:</strong> Det var det sikreste sted for minoriteter i Syrien</p>
+  <p><strong>❌ Myte:</strong> “Vi kæmper ikke mod kurdere.”</p>
+  <p><strong>✅ Fakta:</strong> Civile bombes, børn dræbes, kvinder kidnappes.</p>
 </section>
 
-<section>
-  <h2>Hvor ligger Rojava?</h2>
-  <p>
-    Rojava ligger i det nordlige Syrien langs grænsen til Tyrkiet.
-    Området er strategisk vigtigt og derfor konstant under angreb.
-  </p>
-  <!-- indsæt evt. kort-billede -->
-</section>
-
+<!-- 🔥 OPGRADERET BILLED-SEKTION -->
 <section id="billeder">
   <h2>Billeder fra demonstrationer</h2>
-  <div class="gallery">
-    <div class="gallery-item"><img src="img1.jpg"></div>
-    <div class="gallery-item"><img src="img2.jpg"></div>
-    <div class="gallery-item"><img src="img3.jpg"></div>
-    <div class="gallery-item"><img src="img4.jpg"></div>
-    <div class="gallery-item"><img src="img5.jpg"></div>
+  <p>Virkelige mennesker. Virkelige stemmer. Virkelig modstand.</p>
+
+  <div class="story-gallery">
+    <div class="story-item">
+      <img src="img1.jpg">
+      <div class="story-overlay"><p>Vi nægter at tie stille</p></div>
+    </div>
+
+    <div class="story-item">
+      <img src="img2.jpg">
+      <div class="story-overlay"><p>Solidaritet i Danmark</p></div>
+    </div>
+
+    <div class="story-item">
+      <img src="img3.jpg">
+      <div class="story-overlay"><p>Stemmer for de belejrede</p></div>
+    </div>
+
+    <div class="story-item">
+      <img src="img4.jpg">
+      <div class="story-overlay"><p>Kampen for frihed</p></div>
+    </div>
+
+    <div class="story-item">
+      <img src="img5.jpg">
+      <div class="story-overlay"><p>Børn fortjener liv – ikke krig</p></div>
+    </div>
   </div>
 </section>
 
