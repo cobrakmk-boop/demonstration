@@ -5,12 +5,98 @@
   <title>Stå med Rojava – Beskyt civile og børn</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f2f2f2;
-      color: #111;
-      line-height: 1.8;
+  <style>
+  :root {
+    --dark: #0f172a;
+    --light: #f8fafc;
+    --accent: #c40000;
+    --gold: #c9a400;
+  }
+
+  body {
+    margin: 0;
+    font-family: "Segoe UI", Arial, sans-serif;
+    background: var(--light);
+    color: #111;
+    line-height: 1.8;
+  }
+
+  header {
+    background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+                url("https://images.unsplash.com/photo-1500530855697-b586d89ba3ee");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 120px 20px;
+    text-align: center;
+  }
+
+  header h1 {
+    font-size: 2.6rem;
+    margin-bottom: 10px;
+  }
+
+  header p {
+    font-size: 1.2rem;
+    max-width: 700px;
+    margin: auto;
+  }
+
+  section {
+    max-width: 1000px;
+    margin: 50px auto;
+    background: white;
+    padding: 50px 30px;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  }
+
+  h2 {
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    border-left: 6px solid var(--accent);
+    padding-left: 12px;
+  }
+
+  p {
+    margin-bottom: 15px;
+  }
+
+  .alert {
+    border-left: 6px solid var(--accent);
+    background: #fff5f5;
+  }
+
+  .donate {
+    border-left: 6px solid var(--gold);
+    background: #fffbea;
+  }
+
+  iframe {
+    width: 100%;
+    height: 420px;
+    border-radius: 8px;
+  }
+
+  footer {
+    background: var(--dark);
+    color: #cbd5e1;
+    text-align: center;
+    padding: 50px 20px;
+    margin-top: 80px;
+  }
+
+  footer a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+</style>
+
     }
     header {
       background: #0e0e0e;
