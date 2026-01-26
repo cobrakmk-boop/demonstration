@@ -101,6 +101,31 @@
       border: none;
     }
 
+    /* SHARE */
+    .share {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      margin-top: 20px;
+    }
+
+    .share a,
+    .share button {
+      padding: 12px 18px;
+      border-radius: 6px;
+      border: none;
+      cursor: pointer;
+      font-weight: bold;
+      text-decoration: none;
+      color: white;
+      background: var(--dark);
+    }
+
+    .share a:hover,
+    .share button:hover {
+      opacity: 0.85;
+    }
+
     footer {
       background: var(--dark);
       color: #cbd5e1;
@@ -164,17 +189,32 @@
 
 <section>
   <h2>Video: The current situation</h2>
-  <iframe
-    src="https://www.youtube.com/embed/iKo5YpmFMT8"
-    allowfullscreen>
-  </iframe>
+  <iframe src="https://www.youtube.com/embed/iKo5YpmFMT8" allowfullscreen></iframe>
 </section>
 
 <section>
-  <h2>Learn more</h2>
+  <h2>Share this page</h2>
   <p>
-    <a href="hvem-er-kurder.html">→ Who are the Kurds?</a>
+    Help spread awareness. Share this page with friends, family, and on social media.
   </p>
+
+  <div class="share">
+    <a href="https://wa.me/?text=Stand%20with%20Rojava%20https://cobrakmk-boop.github.io/demonstration/index-en.html" target="_blank">
+      WhatsApp
+    </a>
+
+    <a href="https://www.facebook.com/sharer/sharer.php?u=https://cobrakmk-boop.github.io/demonstration/index-en.html" target="_blank">
+      Facebook
+    </a>
+
+    <a href="https://twitter.com/intent/tweet?url=https://cobrakmk-boop.github.io/demonstration/index-en.html&text=Stand%20with%20Rojava" target="_blank">
+      X / Twitter
+    </a>
+
+    <button onclick="navigator.clipboard.writeText('https://cobrakmk-boop.github.io/demonstration/index-en.html')">
+      Copy link
+    </button>
+  </div>
 </section>
 
 <section class="donate" id="support">
