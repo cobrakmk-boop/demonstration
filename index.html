@@ -1,295 +1,215 @@
 <!DOCTYPE html>
 <html lang="da">
 <head>
-  <meta charset="UTF-8">
-  <title>Stå med Rojava – Beskyt civile og børn</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<title>Stå med Rojava – Beskyt civile og børn</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <style>
-    :root {
-      --dark: #0f172a;
-      --light: #f8fafc;
-      --accent: #c40000;
-      --gold: #c9a400;
-    }
-
-    body {
-      margin: 0;
-      padding-top: 80px;
-      font-family: "Segoe UI", Arial, sans-serif;
-      background: var(--light);
-      color: #111;
-      line-height: 1.8;
-    }
-
-    .menu {
-      position: fixed;
-      top: 0;
-      width: 100%;
-      background: rgba(15,23,42,0.95);
-      padding: 15px 20px;
-      display: flex;
-      justify-content: center;
-      gap: 25px;
-      z-index: 1000;
-    }
-
-    .menu a {
-      color: white;
-      text-decoration: none;
-      font-weight: bold;
-    }
-
-    header {
-      background:
-        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
-        url("flag-dk-kurdistan.png");
-      background-size: cover;
-      background-position: center;
-      color: white;
-      padding: 120px 20px;
-      text-align: center;
-    }
-
-    section {
-      max-width: 1000px;
-      margin: 50px auto;
-      background: white;
-      padding: 50px 30px;
-      border-radius: 10px;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.08);
-    }
-
-    h2 {
-      border-left: 6px solid var(--accent);
-      padding-left: 12px;
-    }
-
-    .alert {
-      background: #fff5f5;
-      border-left: 6px solid var(--accent);
-    }
-
-    .donate {
-      background: #fffbea;
-      border-left: 6px solid var(--gold);
-    }
-
-    iframe {
-      width: 100%;
-      height: 420px;
-      border-radius: 8px;
-      border: none;
-    }
-
-    /* TIMELINE */
-    .timeline {
-      position: relative;
-      padding-left: 30px;
-    }
-
-    .timeline::before {
-      content: "";
-      position: absolute;
-      left: 8px;
-      top: 0;
-      bottom: 0;
-      width: 4px;
-      background: var(--accent);
-    }
-
-    .timeline-item {
-      margin-bottom: 30px;
-    }
-
-    .timeline-item h3 {
-      margin-bottom: 5px;
-      color: var(--accent);
-    }
-
-    /* STORY GALLERY */
-    .story-gallery {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-      gap: 25px;
-    }
-
-    .story-item {
-      position: relative;
-      height: 260px;
-      border-radius: 12px;
-      overflow: hidden;
-      box-shadow: 0 12px 30px rgba(0,0,0,0.25);
-    }
-
-    .story-item img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-
-    .story-overlay {
-      position: absolute;
-      inset: 0;
-      background: linear-gradient(to top, rgba(0,0,0,0.85), rgba(0,0,0,0.25));
-      display: flex;
-      align-items: flex-end;
-      padding: 20px;
-    }
-
-    .story-overlay p {
-      color: white;
-      font-size: 1rem;
-      font-weight: bold;
-      margin: 0;
-    }
-
-    .copy-box {
-      background: #fff;
-      border-left: 4px solid var(--accent);
-      padding: 20px;
-      margin-top: 20px;
-    }
-
-    footer {
-      background: var(--dark);
-      color: #cbd5e1;
-      text-align: center;
-      padding: 50px 20px;
-    }
-  </style>
+<style>
+:root{
+--dark:#0f172a;
+--light:#f8fafc;
+--accent:#c40000;
+--gold:#c9a400;
+}
+body{
+margin:0;
+padding-top:80px;
+font-family:"Segoe UI",Arial,sans-serif;
+background:var(--light);
+color:#111;
+line-height:1.8;
+}
+.menu{
+position:fixed;
+top:0;
+width:100%;
+background:rgba(15,23,42,0.95);
+padding:15px 20px;
+display:flex;
+justify-content:center;
+gap:25px;
+z-index:1000;
+}
+.menu a{color:white;text-decoration:none;font-weight:bold;}
+header{
+background:linear-gradient(rgba(0,0,0,.65),rgba(0,0,0,.65)),url("flag-dk-kurdistan.png");
+background-size:cover;
+background-position:center;
+color:white;
+padding:120px 20px;
+text-align:center;
+}
+section{
+max-width:1000px;
+margin:50px auto;
+background:white;
+padding:50px 30px;
+border-radius:10px;
+box-shadow:0 10px 30px rgba(0,0,0,.08);
+}
+h2{border-left:6px solid var(--accent);padding-left:12px;}
+.alert{background:#fff5f5;border-left:6px solid var(--accent);}
+.donate{background:#fffbea;border-left:6px solid var(--gold);}
+iframe{width:100%;height:420px;border-radius:8px;border:none;}
+.story-gallery{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(260px,1fr));
+gap:25px;
+}
+.story-item{
+position:relative;
+height:260px;
+border-radius:12px;
+overflow:hidden;
+box-shadow:0 12px 30px rgba(0,0,0,.25);
+}
+.story-item img{width:100%;height:100%;object-fit:cover;}
+.story-overlay{
+position:absolute;inset:0;
+background:linear-gradient(to top,rgba(0,0,0,.85),rgba(0,0,0,.25));
+display:flex;align-items:flex-end;padding:20px;
+}
+.story-overlay p{color:white;font-weight:bold;margin:0;}
+.copy-box{
+background:white;
+border-left:4px solid var(--accent);
+padding:20px;
+margin:25px 0;
+}
+footer{
+background:var(--dark);
+color:#cbd5e1;
+text-align:center;
+padding:50px 20px;
+}
+</style>
 </head>
 
 <body>
 
 <nav class="menu">
-  <a href="#hjem">Hjem</a>
-  <a href="#rojava">Rojava nu</a>
-  <a href="#video">Video</a>
-  <a href="#billeder">Billeder</a>
-  <a href="#stot">Støt sagen</a>
+<a href="#hjem">Hjem</a>
+<a href="#rojava">Rojava nu</a>
+<a href="#video">Video</a>
+<a href="#billeder">Billeder</a>
+<a href="#stot">Støt</a>
 </nav>
 
 <header id="hjem">
-  <h1>Vi demonstrerer for Rojava (Nordøstlige Syrien)</h1>
-  <p>Fordi stilhed også er et valg – og vi nægter at være stille</p>
+<h1>Vi demonstrerer for Rojava (Nordøstlige Syrien)</h1>
+<p>Fordi stilhed også er et valg – og vi nægter at være stille</p>
 </header>
 
 <section>
-  <h2>Hvorfor demonstrerer vi?</h2>
-  <p>
-    Vi demonstrerer som kurdere og kristne i Danmark for at skabe opmærksomhed
-    om alvorlige overgreb mod civile i Rojava og systematiske brud på menneskerettigheder.
-  </p>
+<h2>Hvorfor demonstrerer vi?</h2>
+<p>
+Vi demonstrerer som kurdere og kristne i Danmark for at skabe opmærksomhed om
+alvorlige overgreb mod civile i Rojava og systematiske brud på menneskerettigheder.
+</p>
 </section>
 
 <section class="alert" id="rojava">
-  <h2>Hvad sker der i Rojava lige nu?</h2>
-  <p>
-    Rojava er omringet. Der kommer ingen mad, vand, medicin eller elektricitet ind.
-    De samme ekstremistiske grupper er vendt tilbage – under nye navne.
-  </p>
+<h2>Hvad sker der i Rojava lige nu?</h2>
+<p>
+Rojava er omringet. Kobane er belejret.
+Der kommer ingen mad, vand, medicin eller elektricitet ind.
+</p>
+<p>
+De samme ekstremistiske grupper, som verden kendte som ISIS og al-Qaeda,
+er igen aktive – nu under nye navne.
+</p>
 </section>
 
 <section class="alert">
-  <h2>Situationen i 2026</h2>
-  <p>
-    De grupper, der i dag angriber kurdere, er de samme som tidligere ISIS og al-Qaeda.
-    Nu er de integreret i den nye syriske hær, ledet af Abu Mohammed al-Joulani.
-  </p>
-  <p>
-    Det er samme ideologi. Samme brutalitet. Samme mål.
-  </p>
+<h2>Situationen i 2026</h2>
+<p>
+I 2026 er Rojava igen blevet et mål.
+Byer bombes, områder opdeles, og civile straffes kollektivt.
+</p>
+<p>
+USA og Trump har trukket sig tilbage og efterladt kurderne uden beskyttelse.
+</p>
 </section>
 
 <section class="alert">
-  <h2>20.000 ofrede liv – for hele verden</h2>
-  <p>
-    Over <strong>20.000 unge kurdiske mænd og kvinder</strong> ofrede deres liv
-    for at stoppe ISIS – ikke kun for kurdere, men for Danmark, Europa og hele Vesten.
-  </p>
+<h2>20.000 ofrede liv – for hele verden</h2>
+<p>
+Over <strong>20.000 unge kurdiske mænd og kvinder</strong>
+ofrede deres liv i kampen mod ISIS.
+</p>
+<p>
+De kæmpede ikke kun for kurdere –
+men for Danmark, Europa og hele Vesten.
+</p>
 </section>
 
-<!-- ✅ FAKTA VS MYTER -->
 <section>
-  <h2>Fakta vs. Myter</h2>
-
-  <p><strong>❌ Myte:</strong> “Den nye syriske hær kæmper kun mod terror.”</p>
-  <p><strong>✅ Fakta:</strong> Det er tidligere ISIS- og al-Qaeda-krigere under nyt navn.</p>
-
-  <p><strong>❌ Myte:</strong> “Rojava er kun for kurdere.”</p>
-  <p><strong>✅ Fakta:</strong> Det var det sikreste sted for kristne, yezidier og minoriteter.</p>
-
-  <p><strong>❌ Myte:</strong> “Situationen er stabil.”</p>
-  <p><strong>✅ Fakta:</strong> Byer belejres. Civile sulter. Børn dræbes.</p>
+<h2>De samme ekstremister – nyt navn</h2>
+<p>
+Det er de samme mennesker. Den samme ideologi. De samme forbrydelser.
+</p>
+<p>
+Tidligere ISIS- og al-Qaeda-krigere opererer nu
+i den nye syriske hær under ledelse af
+<strong>Abu Mohammed al-Joulani</strong>.
+</p>
+<p>
+Kun navnet har ændret sig.
+Ikke volden.
+</p>
 </section>
 
-<!-- ✅ TIDSLINJE -->
 <section>
-  <h2>Tidslinje: Kurdernes kamp</h2>
+<h2>Hvorfor kristne og minoriteter flygtede til Rojava</h2>
+<p>
+Kristne, yezidier og andre minoriteter flygtede til kurdiske områder,
+fordi det var de eneste steder med religionsfrihed,
+kvinders rettigheder og sameksistens.
+</p>
+</section>
 
-  <div class="timeline">
-    <div class="timeline-item">
-      <h3>1918</h3>
-      <p>Kurderne nægtes deres egen stat.</p>
-    </div>
+<section class="alert">
+<h2>Fakta vs. Myter</h2>
+<p><strong>❌ Myte:</strong> “Vi kæmper ikke mod kurdere.”</p>
+<p><strong>✅ Fakta:</strong> Civile bombes, børn dræbes, kvinder kidnappes.</p>
+</section>
 
-    <div class="timeline-item">
-      <h3>1988 – Halabja</h3>
-      <p>Kemiske våben bruges mod kurdiske civile.</p>
-    </div>
-
-    <div class="timeline-item">
-      <h3>2014 – Kobane</h3>
-      <p>Kurderne stopper ISIS, mens verden ser til.</p>
-    </div>
-
-    <div class="timeline-item">
-      <h3>2026</h3>
-      <p>De samme ekstremister vender tilbage under nyt navn.</p>
-    </div>
-  </div>
+<section class="alert">
+<h2>Kopiér og send til politikere & journalister</h2>
+<div class="copy-box">
+<strong>Emne: Den alvorlige situation i Rojava kræver handling</strong><br><br>
+Over 20.000 unge kurdere døde i kampen mod ISIS – for Europas sikkerhed.<br><br>
+I dag er Rojava igen under angreb.
+Kobane er belejret.
+De samme ekstremister opererer under nye navne.<br><br>
+Stilhed koster liv.
+</div>
 </section>
 
 <section id="video">
-  <h2>Video: Den aktuelle situation</h2>
-  <iframe src="https://www.youtube.com/embed/iKo5YpmFMT8" allowfullscreen></iframe>
-</section>
-
-<section class="alert">
-  <h2>Kopiér og send til politikere og journalister</h2>
-
-  <div class="copy-box">
-    <strong>Emne: Rojava – de samme ekstremister, samme forbrydelser</strong><br><br>
-
-    Kurderne ofrede over 20.000 liv for at stoppe ISIS – for hele verden.<br><br>
-
-    I dag angribes de igen af de samme grupper, blot under nyt navn.
-    Kobane er belejret. Civile sulter. Verden er tavs.<br><br>
-
-    Stilhed koster liv.
-  </div>
+<h2>Video: Den aktuelle situation</h2>
+<iframe src="https://www.youtube.com/embed/iKo5YpmFMT8" allowfullscreen></iframe>
 </section>
 
 <section id="billeder">
-  <h2>Billeder fra demonstrationer</h2>
-
-  <div class="story-gallery">
-    <div class="story-item"><img src="img1.jpg"><div class="story-overlay"><p>Vi nægter at tie</p></div></div>
-    <div class="story-item"><img src="img2.jpg"><div class="story-overlay"><p>Solidaritet</p></div></div>
-    <div class="story-item"><img src="img3.jpg"><div class="story-overlay"><p>Stemmer for Rojava</p></div></div>
-    <div class="story-item"><img src="img4.jpg"><div class="story-overlay"><p>Kampen fortsætter</p></div></div>
-    <div class="story-item"><img src="img5.jpg"><div class="story-overlay"><p>Børn fortjener fred</p></div></div>
-  </div>
+<h2>Billeder fra demonstrationer</h2>
+<div class="story-gallery">
+<div class="story-item"><img src="img1.jpg"><div class="story-overlay"><p>Vi nægter at tie</p></div></div>
+<div class="story-item"><img src="img2.jpg"><div class="story-overlay"><p>Solidaritet</p></div></div>
+<div class="story-item"><img src="img3.jpg"><div class="story-overlay"><p>Stemmer for Rojava</p></div></div>
+<div class="story-item"><img src="img4.jpg"><div class="story-overlay"><p>Kampen fortsætter</p></div></div>
+<div class="story-item"><img src="img5.jpg"><div class="story-overlay"><p>Børn fortjener fred</p></div></div>
+</div>
 </section>
 
 <section class="donate" id="stot">
-  <h2>Vil du støtte sagen?</h2>
-  <p><strong>MobilePay: 5325ED</strong></p>
+<h2>Vil du støtte sagen?</h2>
+<p><strong>MobilePay: 5325ED</strong></p>
 </section>
 
 <footer>
-  <p>Lavet af Hamudi</p>
+<p>Lavet af Hamudi – Instagram: @hamudi_6430</p>
 </footer>
 
 </body>
