@@ -22,7 +22,6 @@
       line-height: 1.8;
     }
 
-    /* MENU */
     .menu {
       position: fixed;
       top: 0;
@@ -41,11 +40,6 @@
       font-weight: bold;
     }
 
-    .menu a:hover {
-      text-decoration: underline;
-    }
-
-    /* HEADER */
     header {
       background:
         linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
@@ -55,17 +49,6 @@
       color: white;
       padding: 120px 20px;
       text-align: center;
-    }
-
-    header h1 {
-      font-size: 2.6rem;
-      margin-bottom: 10px;
-    }
-
-    header p {
-      font-size: 1.2rem;
-      max-width: 700px;
-      margin: auto;
     }
 
     section {
@@ -78,20 +61,18 @@
     }
 
     h2 {
-      margin-bottom: 20px;
-      font-size: 1.8rem;
       border-left: 6px solid var(--accent);
       padding-left: 12px;
     }
 
     .alert {
-      border-left: 6px solid var(--accent);
       background: #fff5f5;
+      border-left: 6px solid var(--accent);
     }
 
     .donate {
-      border-left: 6px solid var(--gold);
       background: #fffbea;
+      border-left: 6px solid var(--gold);
     }
 
     iframe {
@@ -101,7 +82,6 @@
       border: none;
     }
 
-    /* GALLERI */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -113,16 +93,8 @@
       height: 220px;
       object-fit: cover;
       border-radius: 8px;
-      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
     }
 
-    .gallery-item p {
-      margin-top: 10px;
-      text-align: center;
-      font-size: 0.95rem;
-    }
-
-    /* SHARE */
     .share {
       display: flex;
       flex-wrap: wrap;
@@ -130,21 +102,15 @@
       margin-top: 20px;
     }
 
-    .share a,
-    .share button {
+    .share a, .share button {
       padding: 12px 18px;
       border-radius: 6px;
       border: none;
-      cursor: pointer;
       font-weight: bold;
-      text-decoration: none;
-      color: white;
       background: var(--dark);
-    }
-
-    .share a:hover,
-    .share button:hover {
-      opacity: 0.85;
+      color: white;
+      cursor: pointer;
+      text-decoration: none;
     }
 
     footer {
@@ -152,13 +118,6 @@
       color: #cbd5e1;
       text-align: center;
       padding: 50px 20px;
-      margin-top: 80px;
-    }
-
-    footer a {
-      color: white;
-      font-weight: bold;
-      text-decoration: none;
     }
   </style>
 </head>
@@ -181,84 +140,47 @@
 
 <section>
   <h2>Hvorfor demonstrerer vi?</h2>
-  <p>
-    Vi demonstrerer som kurdere i Danmark for at skabe opmærksomhed omkring
-    alvorlige brud på menneskerettigheder og trusler mod civile i Rojava.
-  </p>
-  <p>
-    Vores kamp handler om frihed, værdighed, ligestilling og retten til at leve
-    uden frygt.
-  </p>
-</section>
-
-<section>
-  <h2>Hvorfor demonstrerer vi i Danmark?</h2>
-  <p>
-    Selvom vi befinder os langt fra krigen, har vi et ansvar for at bruge vores
-    stemme. Danmark er et demokratisk land, hvor fredelig protest er en rettighed.
-  </p>
-  <p>
-    Ved at demonstrere her lægger vi pres på politikere, medier og internationale
-    organisationer for ikke at vende ryggen til civile i Rojava.
-  </p>
+  <p>Vi demonstrerer for menneskerettigheder, frihed og beskyttelse af civile.</p>
 </section>
 
 <section class="alert" id="rojava">
-  <h2>Hvad sker der lige nu i Rojava?</h2>
+  <h2>Hvad sker der i Rojava?</h2>
   <p><strong>Børn og familier mangler mad, vand og elektricitet.</strong></p>
-  <p>
-    Rojava er et af de sidste steder i Syrien med religionsfrihed, kvinders
-    rettigheder og beskyttelse af minoriteter.
-  </p>
 </section>
 
 <section>
-  <h2>Hvorfor Rojava betyder noget for hele verden</h2>
-  <p>
-    Rojava er et sjældent eksempel på et samfund baseret på demokrati,
-    ligestilling og sameksistens i en region præget af krig og ekstremisme.
-  </p>
-  <p>
-    Hvis Rojava falder, sender det et signal om, at menneskerettigheder ikke
-    er værd at forsvare. Derfor angår kampen os alle.
-  </p>
-</section>
-
-<section>
-  <h2>Video: Den aktuelle situation</h2>
+  <h2>Video</h2>
   <iframe src="https://www.youtube.com/embed/iKo5YpmFMT8" allowfullscreen></iframe>
 </section>
 
 <section id="billeder">
   <h2>Billeder fra demonstrationer</h2>
-  <p>Virkeligheden bag vores kamp – solidaritet, modstand og håb.</p>
-
   <div class="gallery">
-    <div class="gallery-item"><img src="img1.jpg"><p>Demonstration for Rojava</p></div>
-    <div class="gallery-item"><img src="img2.jpg"><p>Sammenhold i Danmark</p></div>
-    <div class="gallery-item"><img src="img3.jpg"><p>Stemmer der nægter at tie</p></div>
-    <div class="gallery-item"><img src="img4.jpg"><p>Kampen for frihed</p></div>
-    <div class="gallery-item"><img src="img5.jpg"><p>Støtte til børn i Rojava</p></div>
+    <div class="gallery-item"><img src="img1.jpg"></div>
+    <div class="gallery-item"><img src="img2.jpg"></div>
+    <div class="gallery-item"><img src="img3.jpg"></div>
+    <div class="gallery-item"><img src="img4.jpg"></div>
+    <div class="gallery-item"><img src="img5.jpg"></div>
   </div>
 </section>
 
-<section class="alert">
-  <h2>Stilhed koster liv</h2>
-  <p>
-    Når verden vælger tavshed, er det civile der betaler prisen.
-    Vi nægter at acceptere, at politiske interesser vejer tungere
-    end menneskeliv.
-  </p>
+<!-- 🔥 NY SEKTION – KORREKT INDSAT -->
+<section>
+  <h2>Hvad kan DU gøre?</h2>
+  <ul>
+    <li>📢 Del denne side og tal om Rojava</li>
+    <li>✊ Deltag i demonstrationer</li>
+    <li>💛 Støt økonomisk hvis du kan</li>
+    <li>📱 Følg og del på sociale medier</li>
+  </ul>
+  <p>Sammen kan små handlinger blive til en stærk stemme.</p>
 </section>
 
 <section>
   <h2>Del denne side</h2>
-  <p>Hjælp os med at sprede budskabet.</p>
-
   <div class="share">
     <a href="https://wa.me/?text=Støt%20Rojava%20https://cobrakmk-boop.github.io/demonstration/" target="_blank">WhatsApp</a>
     <a href="https://www.facebook.com/sharer/sharer.php?u=https://cobrakmk-boop.github.io/demonstration/" target="_blank">Facebook</a>
-    <a href="https://twitter.com/intent/tweet?url=https://cobrakmk-boop.github.io/demonstration/&text=Støt%20Rojava" target="_blank">X / Twitter</a>
     <button onclick="navigator.clipboard.writeText('https://cobrakmk-boop.github.io/demonstration/')">Kopiér link</button>
   </div>
 </section>
@@ -266,17 +188,10 @@
 <section class="donate" id="stot">
   <h2>Vil du støtte sagen?</h2>
   <p><strong>MobilePay: 5325ED</strong></p>
-  <p>Din støtte hjælper civile, børn og familier 💛</p>
 </section>
 
 <footer>
-  <p>Hjemmesiden er lavet af Hamudi</p>
-  <p>
-    Instagram:
-    <a href="https://www.instagram.com/hamudi_6430/" target="_blank">
-      @hamudi_6430
-    </a>
-  </p>
+  <p>Lavet af Hamudi – Instagram: @hamudi_6430</p>
 </footer>
 
 </body>
