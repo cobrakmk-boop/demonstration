@@ -82,6 +82,32 @@
       border: none;
     }
 
+    /* TIMELINE */
+    .timeline {
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .timeline::before {
+      content: "";
+      position: absolute;
+      left: 8px;
+      top: 0;
+      bottom: 0;
+      width: 4px;
+      background: var(--accent);
+    }
+
+    .timeline-item {
+      margin-bottom: 30px;
+    }
+
+    .timeline-item h3 {
+      margin-bottom: 5px;
+      color: var(--accent);
+    }
+
+    /* GALLERY */
     .gallery {
       display: grid;
       grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
@@ -95,6 +121,7 @@
       border-radius: 8px;
     }
 
+    /* SHARE */
     .share {
       display: flex;
       flex-wrap: wrap;
@@ -140,12 +167,66 @@
 
 <section>
   <h2>Hvorfor demonstrerer vi?</h2>
-  <p>Vi demonstrerer for menneskerettigheder, frihed og beskyttelse af civile.</p>
+  <p>
+    Vi demonstrerer som kurdere i Danmark for at skabe opmærksomhed om
+    overgreb mod civile i Rojava og alvorlige brud på menneskerettigheder.
+  </p>
+</section>
+
+<section>
+  <h2>Hvorfor demonstrerer vi i Danmark?</h2>
+  <p>
+    Danmark er et demokratisk land, hvor vi har retten til at tale frit
+    og demonstrere fredeligt. Den ret bruger vi for dem, der ikke kan.
+  </p>
 </section>
 
 <section class="alert" id="rojava">
   <h2>Hvad sker der i Rojava?</h2>
   <p><strong>Børn og familier mangler mad, vand og elektricitet.</strong></p>
+  <p>
+    Rojava er et af de sidste steder i Syrien med religionsfrihed,
+    kvinders rettigheder og beskyttelse af minoriteter.
+  </p>
+</section>
+
+<section>
+  <h2>Hvorfor Rojava betyder noget for hele verden</h2>
+  <p>
+    Rojava er et sjældent eksempel på demokrati og sameksistens
+    i en region præget af krig og ekstremisme.
+  </p>
+</section>
+
+<section>
+  <h2>Tidslinje: Kurdernes kamp</h2>
+  <div class="timeline">
+    <div class="timeline-item">
+      <h3>1918</h3>
+      <p>Kurderne nægtes retten til en stat.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>1988 – Halabja</h3>
+      <p>Saddam Hussein bruger kemiske våben mod kurdiske civile.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>2014 – Kobane</h3>
+      <p>Kurderne står i front mod ISIS.</p>
+    </div>
+    <div class="timeline-item">
+      <h3>I dag</h3>
+      <p>Rojava er fortsat under pres.</p>
+    </div>
+  </div>
+</section>
+
+<section class="alert">
+  <h2>En personlig stemme</h2>
+  <p style="font-style: italic;">
+    “Denne side er lavet for børn, familier og et folk,
+    der igen og igen bliver bedt om at tie stille.”
+  </p>
+  <p style="font-weight: bold;">– En kurder i Danmark</p>
 </section>
 
 <section>
@@ -164,16 +245,22 @@
   </div>
 </section>
 
-<!-- 🔥 NY SEKTION – KORREKT INDSAT -->
+<section class="alert">
+  <h2>Stilhed koster liv</h2>
+  <p>
+    Når verden vælger tavshed, er det civile der betaler prisen.
+    Vi nægter at acceptere dette.
+  </p>
+</section>
+
 <section>
   <h2>Hvad kan DU gøre?</h2>
   <ul>
-    <li>📢 Del denne side og tal om Rojava</li>
+    <li>📢 Del denne side</li>
     <li>✊ Deltag i demonstrationer</li>
-    <li>💛 Støt økonomisk hvis du kan</li>
-    <li>📱 Følg og del på sociale medier</li>
+    <li>💛 Støt økonomisk</li>
+    <li>📱 Følg og del online</li>
   </ul>
-  <p>Sammen kan små handlinger blive til en stærk stemme.</p>
 </section>
 
 <section>
